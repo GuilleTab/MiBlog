@@ -5,3 +5,7 @@ from secciones.models import Secciones
 
 class Listado_secciones(ListView):
     model = Secciones
+
+
+def index(request):
+    return render(request, "noticias/base.html")
